@@ -1,0 +1,90 @@
+#homepage{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#pageTitle{
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    color: green;
+    padding: 0;
+    margin: 0;
+    background-color: #d3d3d3;
+    border-radius: 50px 15px;
+
+}
+
+#subscript{
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 10px;
+    font-style: italic;
+
+}
+
+#signIn{
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.enter{
+
+
+    background-color: #d3d3d3;
+    border-radius: 50px 15px;
+    text-align: center;
+
+    width:25%;
+    margin: 15px auto;
+    display: block;
+}
+.enter > a{
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    text-decoration: none;
+    color: green;
+}
+.popUp:hover{
+    background-color: #919090;
+}
+
+input{
+    font-size: 10px;
+    font-style: italic;
+    border: 0.5px solid rgb(212, 212, 212);
+    border-radius: 10px;
+    padding-left: 7px;
+    box-shadow: 0.5px 0.5px;
+
+}
+
+.popUp{
+    background-color: #d3d3d3;
+    border-radius: 50px 15px;
+    text-align: center;
+
+    width:40%;
+    margin: 15px auto;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    text-decoration: none;
+    color: green;
+}
+
+#login{
+    float: right;
+}
+
+#loginForm{
+    display: none;
+    width: 50%;
+    margin: 0 auto;
+}
