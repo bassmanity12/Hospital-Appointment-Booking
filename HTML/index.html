@@ -25,22 +25,169 @@
     <h1 id="pageTitle">Doctor's</h1>
     <p id="subscript">Medical registration system</p>
 
-    <button class="popUp" id="register" >Register</button>
-    <button class="popUp" id="login" onclick="ShowDiv()">Login</button>
+    <button class="popUp" id="register" onclick="showregisterpopup()" >Register</button>
+    <button class="popUp" id="login" onclick="showloginpopup()">Login</button>
 
-    <div id="loginForm">
-        <form action="">
-            <label id="signIn" name="login">Login: </label>
-            <input name="login" type="text"/>
-            <br/>
+    <!--<div id="loginForm">-->
+        <!--<form action="">-->
+            <!--<label id="signIn" name="login">Login: </label>-->
+            <!--<input name="login" type="text"/>-->
+            <!--<br/>-->
 
-            <label id="signIn" name="password">Password: </label>
-            <input name="password" type="password"/>
-            <br/>
-        </form>
+            <!--<label id="signIn" name="password">Password: </label>-->
+            <!--<input name="password" type="password"/>-->
+            <!--<br/>-->
+        <!--</form>-->
 
-        <button class="enter popUp"><a href="#" >Enter</a></button>
+        <!--<button class="enter popUp"><a href="#" >Enter</a></button>-->
     </div>
+
+
+        <!--<button onclick="showloginpopup()">Login</button>-->
+        <!--&lt;!&ndash;on click, show the login popup window; &ndash;&gt;-->
+
+        ​
+
+        <div id="loginpopup" class="modal" style="display:none;">
+
+
+
+            <form class="modal-content animate" action="/action_page.php">
+
+                <div class="imgcontainer">
+
+                    <span onclick="hideloginpopup()" class="close" title="Close Modal">&times;</span>
+
+                    <img src="../logo.png" alt="logo" class="logo">
+
+                </div>
+
+                ​
+
+                <div class="container">
+
+                    <label for="uname" ><b>Username</b></label>
+
+                    <input type="text" class="formtext" placeholder="Enter Username" name="uname" required>
+
+                    ​
+
+                    <label for="psw"><b>Password</b></label>
+
+                    <input type="password"class="formtext" placeholder="Enter Password" name="psw" required>
+
+
+
+                    <button type="submit">Login</button>
+
+                    <label>
+
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+
+                    </label>
+
+                </div>
+
+                ​
+
+                <div class="container" style="background-color:#f1f1f1">
+
+                    <button type="button" onclick="hideloginpopup()"" class="cancelbtn">Cancel</button>
+
+                    <span class="psw"><a href="#">Forgot password?</a></span>
+
+                </div>
+
+            </form>
+
+        </div>
+<!--creating a similar register popup;-->
+<div id="registerpopup" class="modal" style="display:none;">
+
+
+
+    <form class="modal-content animate" action="/action_page.php">
+
+        <div class="imgcontainer">
+
+            <span onclick="hideregisterpopup()" class="close" title="Close Modal">&times;</span>
+
+            <img src="../logo.png" alt="logo" class="logo">
+
+        </div>
+
+        ​
+
+        <div class="container">
+
+            <label for="uname" ><b>Username</b></label>
+
+            <input type="text" class="formtext" placeholder="Select Username" name="uname" required>
+
+            ​
+
+            <label for="psw"><b>Password</b></label>
+
+            <input type="password"class="formtext" placeholder="Please select a Password" name="psw" required>
+            <label for="psw"><b>Password</b></label>
+
+            <input type="password"class="formtext" placeholder="Retype your password" name="psw" required>
+
+
+
+
+            <button type="submit">Login</button>
+
+            <label>
+
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+
+            </label>
+
+        </div>
+
+        ​
+
+        <div class="container" style="background-color:#f1f1f1">
+
+            <button type="button" onclick="hideregisterpopup()" class="cancelbtn">Cancel</button>
+
+            <!--<span class="psw"> <a href="#">Forgot password?</a></span>-->
+
+        </div>
+
+    </form>
+
+</div>
+
+
+
+        ​
+
+        <!--<script>-->
+
+            <!--// Get the modal-->
+
+            <!--var modal = document.getElementById('id01');-->
+
+<!--​-->
+
+            <!--// When the user clicks anywhere outside of the modal, close it-->
+
+            <!--window.onclick = function(event) {-->
+
+                <!--if (event.target == modal) {-->
+
+                    <!--modal.style.display = "none";-->
+
+                <!--}-->
+            <!--}-->
+        <!--</script>-->
+
+
+
+
+            </div>
 
 <!--adding a footer-->
 <div id="footer" class="navbar">
